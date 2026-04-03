@@ -71,6 +71,12 @@ redis
 
 <h3>3. Run Application</h3>
 
+Install Docker Compose:
+
+```bash
+sudo apt  install docker-compose 
+```
+
 <p>Start all services using Docker Compose:</p>
 
 <pre>docker compose up --build</pre>
@@ -88,6 +94,9 @@ redis
 <pre>http://localhost:5000</pre>
 
 <p>Refresh the page multiple times to see the visit counter increase.</p>
+
+<img width="1915" height="936" alt="image" src="https://github.com/user-attachments/assets/99a10fab-697e-48d9-b0eb-64f67ccee818" />
+
 
 <hr>
 
