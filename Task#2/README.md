@@ -5,7 +5,7 @@
 This project demonstrates a multi-container architecture using Docker Compose. It connects a Flask web application to a Redis database container. 
 The application tracks how many times a page has been visited and stores the counter value inside Redis.
 
-<h1>Project 4 — Flask + Redis using Docker Compose</h1>
+<h1>Project - Flask + Redis using Docker Compose</h1>
 
 <p>This project demonstrates a multi-container architecture using Docker Compose. It connects a Flask web application to a Redis database container. The application tracks how many times a page has been visited and stores the counter value inside Redis.</p>
 
