@@ -128,7 +128,11 @@ cd docker-python-app</code></pre>
 <pre><code>http://localhost:5000</code></pre>
 
 <p>You should see:</p>
-<pre><code>{"message": "Welcome to Dockerized Flask Application!"}</code></pre>
+<pre><code>{"message": "Hello & Welcome to Dockerized Flask Application!"}</code></pre>
+
+<img width="1912" height="812" alt="image" src="https://github.com/user-attachments/assets/89137443-e7d3-4b3a-bfdb-7db4980585d4" />
+
+---
 
 <h2>Step 9: Useful Docker Commands</h2>
 
