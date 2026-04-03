@@ -115,7 +115,7 @@ CMD ["python", "app.py"]</code></pre>
 <pre><code>http://localhost:5000</code></pre>
 
 <p>You should see:</p>
-<pre><code>{"message": "Hello Docker"}</code></pre>
+<pre><code>{"message": "Welcome to Dockerized Flask Application!"}</code></pre>
 
 <h2>Step 9: Useful Docker Commands</h2>
 
