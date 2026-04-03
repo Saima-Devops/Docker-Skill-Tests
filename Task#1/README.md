@@ -36,16 +36,21 @@ cd docker-python-app</code></pre>
 <pre><code>nano app.py</code></pre>
 
 <p>Add the following content:</p>
-<pre><code>from flask import Flask, jsonify
 
-app = Flask(__name__)
+**Flask Application Code:**
 
-@app.route("/")
-def home():
-    return jsonify({"message": "Hello Docker"})
+   - Create a Python file `app.py` with the following code:
+     ```python
+     from flask import Flask
+     app = Flask(__name__)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)</code></pre>
+     @app.route('/')
+     def home():
+         return "Welcome to Dockerized Flask Application!"
+
+     if __name__ == "__main__":
+         app.run(host="0.0.0.0", port=5000)
+     ```
 
 <p>This creates a simple API that returns a JSON response.</p>
 
@@ -63,19 +68,27 @@ if __name__ == "__main__":
 <pre><code>nano Dockerfile</code></pre>
 
 <p>Add the following content:</p>
-<pre><code>FROM python:3.11-slim
 
-WORKDIR /app
+   - Write a `Dockerfile` to containerize the Flask application:
+     ```Dockerfile
+     # Use the official Python image as a base
+     FROM python:3.9-slim
 
-COPY requirements.txt .
+     # Set the working directory in the container
+     WORKDIR /app
 
-RUN pip install --no-cache-dir -r requirements.txt
+     # Copy the current directory contents into the container
+     COPY . /app
 
-COPY app.py .
+     # Install Flask
+     RUN pip install flask
 
-EXPOSE 5000
+     # Expose the application on port 5000
+     EXPOSE 5000
 
-CMD ["python", "app.py"]</code></pre>
+     # Command to run the application
+     CMD ["python", "app.py"]
+     ```
 
 <h3>Explanation:</h3>
 <ul>
