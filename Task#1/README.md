@@ -33,7 +33,7 @@ cd docker-python-app</code></pre>
 
 <h2>Step 2: Create the Flask Application</h2>
 <p>Create a file named <b>app.py</b>:</p>
-<pre><code>touch app.py</code></pre>
+<pre><code>nano app.py</code></pre>
 
 <p>Add the following content:</p>
 <pre><code>from flask import Flask, jsonify
@@ -51,7 +51,7 @@ if __name__ == "__main__":
 
 <h2>Step 3: Create Requirements File</h2>
 <p>Create a file named <b>requirements.txt</b>:</p>
-<pre><code>touch requirements.txt</code></pre>
+<pre><code>nano requirements.txt</code></pre>
 
 <p>Add:</p>
 <pre><code>flask</code></pre>
@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
 <h2>Step 4: Create the Dockerfile</h2>
 <p>Create a file named <b>Dockerfile</b>:</p>
-<pre><code>touch Dockerfile</code></pre>
+<pre><code>nano Dockerfile</code></pre>
 
 <p>Add the following content:</p>
 <pre><code>FROM python:3.11-slim
