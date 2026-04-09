@@ -1,4 +1,4 @@
-# Task 3: Multi-Container Application with Docker Compose
+# Task 2: Multi-Container Application with Docker Compose
 
 ## Flask + Redis using Docker Compose
 
