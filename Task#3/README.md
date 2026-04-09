@@ -1,4 +1,4 @@
-# Docker Task 3: Persistent Data Storage with Docker Volumes
+# Task 3: Persistent Data Storage with Docker Volumes
 
 ## Overview
 
