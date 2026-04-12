@@ -130,10 +130,10 @@ docker build --target dev -t my-app-dev .
 
 ----
 
-## STEP 4. Run the Container
+## STEP 4. Run container with volume mounting
 
 ```bash
-docker run -p 3000:3000 my-app-dev
+docker run -p 3000:3000 -v $(pwd):/app my-app-dev
 ```
 
 ---
